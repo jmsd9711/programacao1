@@ -8,6 +8,7 @@ int main(){
     switch (dia)
     {
     case 1:
+    case 7:
         printf("Final de semana!");
         break;
     case 2:
@@ -17,10 +18,6 @@ int main(){
     case 6:
         printf("Dia util!");
         break;
-    case 7:
-    printf("Final de semana!");
-    break;
-
     default:
         printf("Dia invalido");
         break;
