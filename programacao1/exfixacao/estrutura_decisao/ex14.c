@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
- 
     int mes;
     printf("Informe o mes(1 a 12): \n");
     scanf("%d",&mes);
