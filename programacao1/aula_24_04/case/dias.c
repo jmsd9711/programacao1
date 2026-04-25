@@ -3,7 +3,7 @@
 int main(){
 
     int dia;
-    printf("Informe o dia da semana: \n");
+    printf("Informe o dia(1 a 7): \n");
     scanf("%d",&dia);
     switch (dia)
     {
