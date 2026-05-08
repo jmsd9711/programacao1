@@ -12,5 +12,5 @@ int main(){
         salariof = slf+(tv*0.075);
         printf("Salario: %f",salariof);
     }
-    
+    return 0;
 }

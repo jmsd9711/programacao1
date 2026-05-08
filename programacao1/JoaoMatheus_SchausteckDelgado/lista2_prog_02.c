@@ -2,7 +2,7 @@
 
 int main(){
 
-    int a,b,c,;
+    int a,b,c;
     printf("Digite os valores de A, B e C: \n");
     scanf("%d %d %d", &a, &b, &c);
     if(a + b < c){

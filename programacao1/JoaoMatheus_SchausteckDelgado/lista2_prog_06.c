@@ -21,7 +21,7 @@ int main(){
         case 2:
         printf("Digite os pesos: \n");
         scanf("%f %f %f", &p1, &p2, &p3);
-        media = (n1*p1+n2*p3+n3*p3)/3.0;
+        media = (n1*p1+n2*p2+n3*p3)/(p1+p2+p3);
         printf("Media: %f", media);
         break;
     }

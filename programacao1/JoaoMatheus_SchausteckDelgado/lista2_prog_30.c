@@ -12,23 +12,21 @@ int main(){
     printf("Digite a quantidade de aulas ministradas e as faltas: \n");
     scanf("%d %d", &aulas, &faltas);
 
-    if(nota < 0 || nota > 10 || (nota * 10 / 5) - floor(nota * 10 / 5) > 0){
-        printf("Nota invalida");
+    if(nota<0||nota>10||(nota * 0.5)- floor(nota *0.5)>0){
+        printf("nota invalida");
         return 0;
     }
-
-    frequencia = (float)(aulas - faltas) / aulas;
+    frequencia = (float)(aulas - faltas)/aulas;
     if(frequencia < 0.75){
-        printf("Reprovado por falta de frequencia");
+        printf("reprovado por falta");
         return 0;
     }
-
     if(nota >= 5){
-        printf("Aprovado");
+        printf("aprovado");
     }else if(nota >= 4){
-        printf("Segunda epoca");
+        printf("segunda epoca");
     }else{
-        printf("Reprovado");
+        printf("reprovado");
     }
     return 0;
 }

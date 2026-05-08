@@ -16,9 +16,5 @@ int main(){
     }else{
         printf("Reprovado");
     }
-    
-    if(n1 > 5 && n2 > 5 && n3 > 5){
-        printf("Nao apresentou nenhuma nota abaixo de 5");
-    }
     return 0;
 }

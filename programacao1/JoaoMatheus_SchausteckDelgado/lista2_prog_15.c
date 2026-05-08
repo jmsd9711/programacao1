@@ -9,7 +9,7 @@ int main(){
         printf("Nao eleitor");
     }else if(idade >= 18 && idade <= 65){
         printf("Eleitor obrigatorio");
-    }else{
+    }else if((idade >= 16 && idade < 18) || idade > 65){
         printf("Eleitor facultativo");
     }
     return 0;

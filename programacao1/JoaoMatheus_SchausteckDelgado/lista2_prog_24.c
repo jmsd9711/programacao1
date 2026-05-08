@@ -4,7 +4,7 @@ int main(){
 
     float salario, bonus, total;
     int anos;
-    printf("Digite o salario e o tempo de trabalho (anos): \n");
+    printf("digite o salario e o tempo de trabalho em anos: \n");
     scanf("%f %d", &salario, &anos);
     if(salario <= 4000){
         bonus = salario * 0.15;
@@ -17,6 +17,6 @@ int main(){
         bonus = bonus + (salario * 0.10);
     }
     total = salario + bonus;
-    printf("Salario com bonus: %.2f", total);
+    printf("salario com bonus: %.2f", total);
     return 0;
 }

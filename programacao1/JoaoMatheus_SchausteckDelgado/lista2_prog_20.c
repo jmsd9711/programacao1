@@ -3,18 +3,18 @@
 int main(){
 
     int nota;
-    printf("Digite a nota do aluno (0 a 100): \n");
+    printf("digite a nota do aluno de 0 a 100: \n");
     scanf("%d", &nota);
     if(nota >= 0 && nota <= 60){
-        printf("Conceito: D");
+        printf("conceito D");
     }else if(nota <= 80){
-        printf("Conceito: C");
+        printf("conceito C");
     }else if(nota <= 90){
-        printf("Conceito: B");
+        printf("conceito B");
     }else if(nota <= 100){
-        printf("Conceito: A");
+        printf("conceito A");
     }else{
-        printf("Nota invalida");
+        printf("nota invalida");
     }
     return 0;
 }

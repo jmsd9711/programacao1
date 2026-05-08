@@ -4,7 +4,7 @@ int main(){
 
     int codigo, dependentes;
     float salariob, inss, salariol;
-    printf("Digite o codigo do funcionario: \n");
+    printf("digite o codigo do funcionario: \n");
     scanf("%d", &codigo);
     printf("Digite o salario bruto: \n");
     scanf("%f", &salariob);
@@ -17,7 +17,7 @@ int main(){
     }else{
         inss = salariob * 0.10;
     }
-    salariol = salariob - inss + (150.00 * dependentes) + 140.00 + 550.00;
+    salariol = salariob-inss+ (150.00 * dependentes) + 140.00 + 550.00;
     printf("Codigo: %d \n", codigo);
     printf("Salario liquido: %.2f", salariol);
     return 0;
