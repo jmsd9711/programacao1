@@ -8,7 +8,6 @@ int main(){
     while (d >= n2) {
         d = d - n2;
     }
-
     printf("O resto da divisao de %d por %d eh: %d\n", n1, n2, d);
 
     return 0;
