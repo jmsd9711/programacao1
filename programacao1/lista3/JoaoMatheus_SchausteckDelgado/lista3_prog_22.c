@@ -1,16 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int p=3,i,n,pg,soma=0;
-    printf("Digite a quantidade de termos da PG: \n");
-    scanf("%d",&n);
-    pg = p;
-    for(i=1;i<=n;i++){
-        printf("%d \n",pg);
-        soma += pg;
-        pg = p*pg;
-
+    float anaceleto=1.5, felisberto=1.1, ano=0;
+    while(anaceleto!=felisberto){
+        anaceleto+=0.02;
+        anaceleto+=0.03;
+        ano++;
     }
-    printf("A soma da PG eh: %d", soma);
+    printf("Foram necessarios %f anos para que os dois ficassem com a mesma altura",ano);
     return 0;
 }
