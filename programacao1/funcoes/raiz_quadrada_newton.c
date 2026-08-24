@@ -3,21 +3,18 @@
 
 double newton_raphson(double S){
     double xk, xk1;
-
     if (S == 0.0)
         return 0.0;
-
     xk = S / 2.0;                         
 
     while (1){
         xk1 = 0.5 * (xk + S / xk);        
-
-        if (fabs(xk1 - xk) < 0.0001)      
-            return xk1;
-
+        if (fabs(xk1 - xk) < 0.0001){
+            break;
+        }   
         xk = xk1;                         
     }
-    return S;
+    return xk1;
 }
 
 int main(){
