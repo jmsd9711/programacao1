@@ -7,7 +7,7 @@ int contar_pares_vetor(float v[], int n);
 
 int menor_elemento_vetor(float v[], int n);
 
-int pesquisa_vetor(float v[], int n);
+int pesquisa_vetor(float v[], int n, float valor);
 
 int ultima_ocorrencia_vetor(float v[], int n, float valor);
 
@@ -27,9 +27,9 @@ float somar_vetor(float v[], int n){
 float media_vetor(float v[], int n){
     float soma =0, media;
     for(int i =0; i< n;i++){
-        soma = soma + v[i];
+        soma = soma + (float)v[i];
     }
-    media = soma/n;
+    media = (float)soma/n;
     return media;
 
 }
@@ -41,4 +41,14 @@ int ultima_ocorrencia_vetor(float v[], int n, float valor){
         }
     }
     return -1;
+}
+
+int contar_pares_vetor(float v[], int n){
+    int pares=0;
+    for(int i=0;i<n;i++){
+        if(v[i]%2==0){
+            
+        }
+    }
+
 }
