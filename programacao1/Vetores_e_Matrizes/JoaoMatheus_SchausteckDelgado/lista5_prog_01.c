@@ -1,16 +1,24 @@
 #include <stdio.h>
 
-int main(){
-
-    int a[10];
-    for(int i=0;i<10;i++){
+void ler_vetor(int v[], int n){
+    for(int i=0;i<n;i++){
         printf("Informe um valor: \n");
-        scanf("%d",&a[i]);
+        scanf("%d",&v[i]);
     }
-    for(int i=0;i<10;i++){
-        if(a[i]%2==0){
-            printf("%d \t",a[i]);
+}
+
+void pares(int v[], int n){
+    for(int i=0;i<n;i++){
+        if(v[i]%2==0){
+            printf("%d \t",v[i]);
         }
     }
+}
+
+int main(){
+
+    int v[10];
+    ler_vetor(v,10);
+    pares(v,10);
     return 0;
 }

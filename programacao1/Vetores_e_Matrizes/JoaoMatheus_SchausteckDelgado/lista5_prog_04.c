@@ -1,19 +1,28 @@
 #include <stdio.h>
 
-int main(){
-
-    int a[10];
-    int negativos=0;
-    for(int i=0;i<10;i++){
+void ler_vetor(int v[], int n){
+    for(int i=0;i<n;i++){
         printf("Informe um valor: \n");
-        scanf("%d",&a[i]);
+        scanf("%d",&v[i]);
     }
-    for(int i=0;i<10;i++){
-        if(a[i]<0){
+}
+
+int negativo(int v[], int n){
+    int negativos=0;
+    for(int i=0;i<n;i++){
+        if(v[i]<0){
             negativos++;
             printf("Valor negativo na posicao: %d\n",i);
         }
     }
+    return negativos;
+}
+
+int main(){
+
+    int v[10];
+    ler_vetor(v,10);
+    int negativos = negativo(v,10);
     printf("Foram encontrados %d numeros negativos",negativos);
     return 0;
 }
