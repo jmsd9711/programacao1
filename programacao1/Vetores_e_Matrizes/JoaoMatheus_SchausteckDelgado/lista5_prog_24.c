@@ -24,8 +24,10 @@ void mover(int a[],int k,int n){
 }
 
 int main(){
-    int a[10],k=2;
+    int a[10], k;
     ler(a,10);
+    printf("Digite quantas posicoes quer mudar: \n");
+    scanf("%d",&k);
     mover(a,k,10);
     return 0;
 }
